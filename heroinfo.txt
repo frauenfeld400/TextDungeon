@@ -1,0 +1,37 @@
+4
+! ^ is num heroes, update when adding new one (NO SPACES AFTER)
+! !!NO SPACES IN NAMES!!!
+! if there is an exclamation point, this line will not be read.
+! HERO NAME | TOTAL HP | HERO SPD | HERO ACC | NUM ATTACKS
+! ATTACK NAME | ATTACK DMG | DMG RANGE | DMG TYPE | POSITIONS TO ATTACK | POSITIONS CAN ATTACK FROM | ACC MOD | VERB | STATUS | STATUS %
+! for status, none for no status, and 0%.
+! positions to attack: 1 is position 1, 2 is positions 1-2, 3 is positions 1-3, 4 is positions 1 -4. 5 is only position 4, 6 is positions 3-4, 7 is positions 2-4.
+! 8 is position 2 only. 9 is position 3 only. 10 is positions 2 and 3 only. 11 is position 1 and 3 only. 12 is position 1 and 4 only. 13 is 3 and 4 only.
+! ACC MOD adds flat acc bonus to attack
+! !! signifies end of character
+!
+! HP is HP damage, SD is stress damage, HEAL is a heal, STHEAL is a stress heal
+KNIGHT 30 3 85 4 knight
+SMITE 9 4 HP 2 2 0 smited none 0
+RIPOSTE 11 3 HP 2 2 -10 riposted none 0
+INSPIRE -3 -3 STHEAL 4 4 200 alleviated none 0
+INVIGOR -3 -3 HEAL 4 4 200 healed none 0
+!!
+PRIESTESS 19 5 75 4 priestess
+BASH 6 3 HP 2 2 10 bashed none 0
+JUDGE 5 5 HP 4 3 -5 judged none 0
+CLEANSE -6 -6 HEAL 4 4 200 cleansed none 0
+PRAY -10 0 HEAL 4 4 200 prayed none 0
+!!
+ROGUE 22 6 85 4 rogue
+SLICE 4 8 HP 2 2 10 slashed BLEED 60
+SHOOT 3 10 HP 6 4 -5 shot BLEED 40
+PUNCH 5 2 HP 4 4 -5 punched none 0
+BLAST 8 0 HP 1 1 10 blasted BLEED 40
+!!
+PLAGUE_DOCTOR 20 4 75 4 plague_doctor
+SLICE 5 5 HP 3 3 0 sliced none 0
+BOMB 3 0 HP 3 3 0 bombed POISON 80
+REMEDY -3 -6 HP 4 4 200 remedied none 0
+PATCH -6 0 HP 4 4 200 patched none 0
+!!

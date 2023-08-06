@@ -1,0 +1,12 @@
+
+! ^ num statuses
+! contains all statuses!
+! status % handled in attacks on char sheets 
+! STATUS NAME | DURATION IN ROUNDS | DAMAGE PER ROUND | DAMAGE TYPE | SPECIAL STATUS NUM
+! special status num indicates one of the "core" statuses, like stun. 0 indicates no status num.
+! 1 indicates stun. there may be more later.
+! !! indicates the end of a status, and a new status!
+BLEED 3 4 HP 0
+BLIGHT 6 4 HP 0
+RECOVER -3 3 HP 0
+STUN 1 0 HP 1
